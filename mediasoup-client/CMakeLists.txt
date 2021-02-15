@@ -32,8 +32,8 @@ set(
 )
 
 # TODO(haiyang wu): add condition
-list(APPEND SOURCE_FILES ${PROJECT_SOURCE_DIR}/src/androidTest/jni/parameters_jni.cpp)
-list(APPEND SOURCE_FILES ${PROJECT_SOURCE_DIR}/deps/libmediasoupclient/test/src/fakeParameters.cpp)
+#list(APPEND SOURCE_FILES ${PROJECT_SOURCE_DIR}/src/androidTest/jni/parameters_jni.cpp)
+
 
 # Create target.
 add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES})
@@ -66,7 +66,6 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 	"${SOURCE_DIR}/"
 	"${SOURCE_DIR}/include"
 	"${PROJECT_SOURCE_DIR}/deps/libmediasoupclient/include"
-	"${PROJECT_SOURCE_DIR}/deps/libmediasoupclient/test/include"
 	"${PROJECT_SOURCE_DIR}/deps/libmediasoupclient/deps/libsdptransform/include"
 	"${LIBWEBRTC_INCLUDE_PATH}"
 	"${LIBWEBRTC_INCLUDE_PATH}/third_party/abseil-cpp"

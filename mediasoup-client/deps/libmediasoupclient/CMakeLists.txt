@@ -2,16 +2,6 @@ cmake_minimum_required(VERSION 3.5)
 
 project(mediasoupclient LANGUAGES CXX)
 
-# Set version number.
-set(mediasoupclient_VERSION_MAJOR 3)
-set(mediasoupclient_VERSION_MINOR 0)
-set(mediasoupclient_VERSION_PATCH 8)
-
-# Configure a header file to pass the version.
-configure_file (
-	"${PROJECT_SOURCE_DIR}/version.hpp.in"
-	"${PROJECT_SOURCE_DIR}/include/version.hpp"
-)
 
 # C++ standard requirements.
 set(CMAKE_CXX_STANDARD 11)

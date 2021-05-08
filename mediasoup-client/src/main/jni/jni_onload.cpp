@@ -12,6 +12,7 @@ extern "C" jint JNIEXPORT JNICALL JNI_OnLoad(JavaVM* jvm, void* reserved)
 	if (ret < 0)
 		return -1;
 
+	rtc::LogMessage::LogToDebug(rtc::LoggingSeverity::LS_INFO);
 	mediasoupclient::Initialize();
 	webrtc::jni::LoadGlobalClassReferenceHolder();
 	return JNI_VERSION_1_6;
